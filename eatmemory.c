@@ -14,6 +14,9 @@
 #include <stdbool.h>
 #include <unistd.h>
 #include "args/args.h"
+#include <time.h>
+#include <sys/time.h>
+
 
 #if defined(_SC_PHYS_PAGES) && defined(_SC_AVPHYS_PAGES) && defined(_SC_PAGE_SIZE)
 #define MEMORY_PERCENTAGE
@@ -58,6 +61,15 @@ void print_help() {
 
 short** eat(long total,int chunk){
 	long i;
+
+	struct timeval tv;
+	struct timeval tv_end;
+	gettimeofday(&tv,NULL);
+	unsigned long long now_start = tv.tv_sec * 1000 + tv.tv_usec / 1000;
+	printf("\n Start time：%llu ms\n", now_start);
+
+
+
     short** allocations = malloc(sizeof(short*) * (total/chunk));
 	for(i=0;i<total;i+=chunk){
 		short *buffer=malloc(sizeof(char)*chunk);
@@ -66,8 +78,17 @@ short** eat(long total,int chunk){
         }
 		memset(buffer,0,chunk);
         allocations[i/chunk] = buffer;
+
 	}
-    return allocations;
+
+	gettimeofday(&tv_end,NULL);
+	unsigned long long now_end = tv_end.tv_sec * 1000 + tv_end.tv_usec / 1000;
+	printf(" End time：%llu ms\n", now_end);
+	printf(" Cost time: %llu ms\n\n",now_end - now_start);
+
+
+
+	return allocations;
 }
 
 void digest(short** eaten, long total,int chunk) {
