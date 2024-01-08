@@ -1,0 +1,175 @@
+-----------------Before---------------------
+
+td-guest login: root
+Password:
+Last login: Mon Jan  8 01:15:38 on hvc0
+ =======   WELCOME TO TDX GUEST   =======
+ Version  : Linux MVP Stack 2022WW22
+ Release  : http://cpio-devops-pub.sh.intel.com/tdx/tdx_release.html
+ Created  : Thu Jun  2 01:38:21 EDT 2022
+ ----------------------------------------
+[root@td-guest ~]# ./eatmemory 1G
+Currently total memory: 100169027584
+Currently avail memory: 99908657152
+Eating 1073741824 bytes in chunks of 1024...
+
+ Start time：1704699118836 ms
+ End time：1704699122250 ms
+ Cost time: 3414 ms
+
+Done, press ENTER to free the memory
+
+[root@td-guest ~]# ./eatmemory 2G
+Currently total memory: 100169027584
+Currently avail memory: 99902193664
+Eating 2147483648 bytes in chunks of 1024...
+
+ Start time：1704699150326 ms
+ End time：1704699154179 ms
+ Cost time: 3853 ms
+
+Done, press ENTER to free the memory
+
+[root@td-guest ~]# ./eatmemory 4G
+Currently total memory: 100169027584
+Currently avail memory: 99901992960
+Eating 4294967296 bytes in chunks of 1024...
+
+ Start time：1704699174245 ms
+ End time：1704699182018 ms
+ Cost time: 7773 ms
+
+Done, press ENTER to free the memory
+
+[root@td-guest ~]# ./eatmemory 8G
+Currently total memory: 100169027584
+Currently avail memory: 99901911040
+Eating 8589934592 bytes in chunks of 1024...
+
+ Start time：1704699207487 ms
+ End time：1704699222966 ms
+ Cost time: 15479 ms
+
+Done, press ENTER to free the memory
+
+[root@td-guest ~]# ./eatmemory 16G
+Currently total memory: 100169027584
+Currently avail memory: 99901845504
+Eating 17179869184 bytes in chunks of 1024...
+
+ Start time：1704699242982 ms
+ End time：1704699274509 ms
+ Cost time: 31527 ms
+
+Done, press ENTER to free the memory
+
+[root@td-guest ~]# ./eatmemory 32G
+Currently total memory: 100169027584
+Currently avail memory: 99901902848
+Eating 34359738368 bytes in chunks of 1024...
+
+ Start time：1704699292219 ms
+ End time：1704699357277 ms
+ Cost time: 65058 ms
+
+Done, press ENTER to free the memory
+
+[root@td-guest ~]# ./eatmemory 64G
+Currently total memory: 100169027584
+Currently avail memory: 99901886464
+Eating 68719476736 bytes in chunks of 1024...
+
+ Start time：1704699378392 ms
+ End time：1704699511771 ms
+ Cost time: 133379 ms
+
+Done, press ENTER to free the memory
+
+
+
+----------- Poweroff the guest and switch to After image------------------
+
+td-guest login: root
+Password:
+Last login: Mon Jan  8 02:45:09 on hvc0
+ =======   WELCOME TO TDX GUEST   =======
+ Version  : Linux MVP Stack 2022WW22
+ Release  : http://cpio-devops-pub.sh.intel.com/tdx/tdx_release.html
+ Created  : Thu Jun  2 01:38:21 EDT 2022
+ ----------------------------------------
+[root@td-guest ~]# ./eatmemory 1G
+Currently total memory: 100169027584
+Currently avail memory: 99906543616
+Eating 1073741824 bytes in chunks of 1024...
+
+ Start time：1704700469097 ms
+ End time：1704700472499 ms
+ Cost time: 3402 ms
+
+Done, press ENTER to free the memory
+
+[root@td-guest ~]# ./eatmemory 2G
+Currently total memory: 100169027584
+Currently avail memory: 99907006464
+Eating 2147483648 bytes in chunks of 1024...
+
+ Start time：1704700484171 ms
+ End time：1704700487975 ms
+ Cost time: 3804 ms
+
+Done, press ENTER to free the memory
+
+[root@td-guest ~]# ./eatmemory 4G
+Currently total memory: 100169027584
+Currently avail memory: 99907969024
+Eating 4294967296 bytes in chunks of 1024...
+
+ Start time：1704700499360 ms
+ End time：1704700506921 ms
+ Cost time: 7561 ms
+
+Done, press ENTER to free the memory
+
+[root@td-guest ~]# ./eatmemory 8G
+Currently total memory: 100169027584
+Currently avail memory: 99902492672
+Eating 8589934592 bytes in chunks of 1024...
+
+ Start time：1704700523109 ms
+ End time：1704700538282 ms
+ Cost time: 15173 ms
+
+Done, press ENTER to free the memory
+
+[root@td-guest ~]# ./eatmemory 16G
+Currently total memory: 100169027584
+Currently avail memory: 99902464000
+Eating 17179869184 bytes in chunks of 1024...
+
+ Start time：1704700550684 ms
+ End time：1704700581063 ms
+ Cost time: 30379 ms
+
+Done, press ENTER to free the memory
+
+[root@td-guest ~]# ./eatmemory 32G
+Currently total memory: 100169027584
+Currently avail memory: 99902586880
+Eating 34359738368 bytes in chunks of 1024...
+
+ Start time：1704700595208 ms
+ End time：1704700658931 ms
+ Cost time: 63723 ms
+
+Done, press ENTER to free the memory
+
+[root@td-guest ~]# ./eatmemory 64G
+Currently total memory: 100169027584
+Currently avail memory: 99902447616
+Eating 68719476736 bytes in chunks of 1024...
+
+ Start time：1704700684950 ms
+ End time：1704700813304 ms
+ Cost time: 128354 ms
+
+Done, press ENTER to free the memory
